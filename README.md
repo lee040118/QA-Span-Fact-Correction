@@ -8,8 +8,7 @@ pytorch==1.7.1
 transformers==4.3.3
 ```
 ## Data
-- [Dacon 한국어 문서 생성요약 AI 경진대회](https://dacon.io/competitions/official/235673/overview/) 의 학습 데이터를 활용함
-- 국립 국어원 Data set
+- [Dacon 한국어 문서 생성요약 AI 경진대회](https://dacon.io/competitions/official/235673/overview/) 의 학습 데이터 + 국립 국어원 Data set
 - 기사 원문 context, 개체명이 마스킹된 요약문이 question으로 주어짐
 - Data 구조
   - paragraphs
@@ -22,4 +21,12 @@ transformers==4.3.3
  
  ## Model architecture
  <img src="model.PNG" width="700">
-      
+ 
+ ## How to Train
+ - KoELECTRA summarization fine-tuning
+ - Finetunig에는 [KoELECTRA](https://github.com/monologg/KoELECTRA)의 discriminator를 사용
+```
+python3 run_qa.py --task korquad --config_file koelectra-small-v3.json
+
+```   
+
