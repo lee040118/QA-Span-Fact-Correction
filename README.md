@@ -27,6 +27,5 @@ transformers==4.3.3
  - Finetunig에는 [KoELECTRA](https://github.com/monologg/KoELECTRA)의 discriminator를 사용
 ```
 python3 run_qa.py --task korquad --config_file koelectra-small-v3.json
-
 ```   
 
