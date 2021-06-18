@@ -18,6 +18,10 @@ transformers==4.3.3
       - question : 정답 개체명이 Masking된 요약문
     - context : 기사 본문
   - title : (기사 ID)
+
+```
+sh Create_data.sh
+```   
  
  ## Model architecture
  <img src="model.PNG" width="700">

@@ -19,7 +19,7 @@ def load_jsonl(file_path):
         data = [json.loads(line) for line in f]
     return data
 
- def load_json(file_path):
+def load_json(file_path):
     return json.load(open(file_path, 'r'))
   
 def save_data_jsonl(args, data):
